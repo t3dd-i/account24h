@@ -26,7 +26,7 @@ client.on('ready', () => {
        channelId: channel.id, 
        guildId: process.env.guild, 
        selfMute: false,
-       selfDeaf: false,
+       selfDeaf: true,
        adapterCreator: channel.guild.voiceAdapterCreator 
        });
     }).catch((error) => { return; });
